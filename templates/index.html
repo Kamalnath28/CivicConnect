@@ -6,20 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>CivicConnect</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
-    <h1>CivicConnect</h1>
+    <header class="navbar">
 
-    <h2>Report Problems in Your Community</h2>
+        <div class="logo">
+            CivicConnect
+        </div>
 
-    <p>
-        Help make your community better by reporting
-        public infrastructure problems.
-    </p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="#">Report Issue</a>
+            <a href="#">Track Complaint</a>
+            <a href="#">Login</a>
+        </nav>
 
-    <button>Report an Issue</button>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="tagline">
+                    MAKE YOUR COMMUNITY BETTER
+                </p>
+
+                <h1>
+                    Report Problems.<br>
+                    Improve Your Community.
+                </h1>
+
+                <p class="description">
+                    CivicConnect makes it easy to report public
+                    infrastructure problems and track their progress.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="/report" class="primary-button">
+                        Report an Issue
+                    </a>
+
+                    <a href="#" class="secondary-button">
+                        Track Complaint
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="issues">
+
+            <h2>What can you report?</h2>
+
+            <p class="section-description">
+                Help us identify problems in your local area.
+            </p>
+
+
+            <div class="issue-grid">
+
+                <div class="issue-card">
+                    <div class="issue-icon">🕳️</div>
+                    <h3>Potholes</h3>
+                    <p>Report damaged roads and potholes.</p>
+                </div>
+
+
+                <div class="issue-card">
+                    <div class="issue-icon">💡</div>
+                    <h3>Street Lights</h3>
+                    <p>Report broken or damaged street lights.</p>
+                </div>
+
+
+                <div class="issue-card">
+                    <div class="issue-icon">🗑️</div>
+                    <h3>Garbage</h3>
+                    <p>Report overflowing garbage or waste.</p>
+                </div>
+
+
+                <div class="issue-card">
+                    <div class="issue-icon">🚰</div>
+                    <h3>Water Leakage</h3>
+                    <p>Report leaking pipes or water wastage.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 CivicConnect. Community-powered reporting.
+        </p>
+
+    </footer>
 
 </body>
 
