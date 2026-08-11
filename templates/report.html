@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report an Issue - CivicConnect</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            CivicConnect
+        </div>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/report">Report Issue</a>
+            <a href="#">Track Complaint</a>
+            <a href="#">Login</a>
+        </nav>
+
+    </header>
+
+
+    <main class="report-page">
+
+        <div class="report-container">
+
+            <h1>Report a Public Issue</h1>
+
+            <p>
+                Help improve your community by reporting
+                a problem in your area.
+            </p>
+
+
+            <form>
+
+                <label for="category">
+                    Issue Category
+                </label>
+
+                <select id="category" name="category">
+
+                    <option value="">
+                        Select an issue
+                    </option>
+
+                    <option value="pothole">
+                        Pothole
+                    </option>
+
+                    <option value="street-light">
+                        Broken Street Light
+                    </option>
+
+                    <option value="garbage">
+                        Garbage
+                    </option>
+
+                    <option value="water-leakage">
+                        Water Leakage
+                    </option>
+
+                </select>
+
+
+                <label for="location">
+                    Location
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="Enter the location"
+                >
+
+
+                <label for="description">
+                    Description
+                </label>
+
+                <textarea
+                    id="description"
+                    name="description"
+                    rows="6"
+                    placeholder="Describe the problem..."
+                ></textarea>
+
+
+                <label for="photo">
+                    Upload Photo
+                </label>
+
+                <input
+                    type="file"
+                    id="photo"
+                    name="photo"
+                >
+
+
+                <button type="submit">
+                    Submit Report
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
