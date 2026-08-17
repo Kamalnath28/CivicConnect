@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,request
 
 app = Flask(__name__)
 
@@ -7,8 +7,19 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/report")
+@app.route("/report", methods=["GET", "POST"])
 def report():
+
+    if request.method == "POST":
+
+        category = request.form["category"]
+        location = request.form["location"]
+        description = request.form["description"]
+
+        print("Category:", category)
+        print("Location:", location)
+        print("Description:", description)
+
     return render_template("report.html")
 
 
